@@ -7,22 +7,22 @@ import Header from './components/Header'
 const User = resolve => {
   require.ensure(["./components/user/User.vue"], () => {
     resolve(require("./components/user/User"));
-  } )
+  }, "User" )
 }
 const UserStart = resolve => {
   require.ensure(["./components/user/UserStart.vue"], () => {
     resolve(require("./components/user/UserStart"));
-  } )
+  } , "User")
 }
 const UserDetail = resolve => {
   require.ensure(["./components/user/UserDetail.vue"], () => {
     resolve(require("./components/user/UserDetail"));
-  } )
+  } , "User")
 }
 const UserEdit = resolve => {
   require.ensure(["./components/user/UserEdit.vue"], () => {
     resolve(require("./components/user/UserEdit"));
-  } )
+  } , "User")
 }
 
 
